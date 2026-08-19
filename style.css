@@ -1,0 +1,171 @@
+/* ===== Base styles (applies to all pages) ===== */
+
+body {
+    font-family: 'times new roman', serif, serif;
+    max-width: 700px;
+    margin: 50px auto;
+    line-height: 1.6;
+
+    background-color: #fff8c7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #00f5ff;
+      -webkit-text-stroke: 0.5px #FF5F1F;
+}
+
+/*image-logo*
+.name-flame.gif{
+    width: 500px;
+    max-width: 90%;
+    height: auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    color: #aaaaaa important!;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+/* Links */
+a {
+    color: #FF5F1F;
+    -webkit-text-stroke: 0.5px #00f5ff;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+a:hover {
+    color: #ff00ff;
+    text-decoration: underline;
+}
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.back-home {
+    position: fixed;
+    top: 500px;
+    left: 10px;
+}
+   
+
+/* Lists (for CV / portfolio) */
+ul {
+    padding-left: 20px;
+}
+
+/* ===== Floating secret icon ===== */
+
+#secret-icon {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    z-index: 999;
+
+    opacity: 0.3; /* slightly hidden */
+}
+/* Outer container (the visible window) */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* The moving text */
+.banner-track {
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    font-family: 'times new roman', serif;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    /* Animation */
+    animation: scroll-left 50s linear infinite;
+    
+}
+
+/* The animation itself */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* ===== Page-specific styles ===== */
+
+/* Home page */
+.home {
+    text-align: center;
+}
+
+/*writer*/
+.writer-page h1 {
+    font-size: 75px !important;
+}
+
+.writer-page h2 {
+    font-size: 25px !important;
+    text-align: left !important;
+}
+
+.writer-page nav a {
+    font-size: 20px !important;
+}
+
+
+.portfolio h1 {
+    color: #ff00ff;
+}
+ /*poetry page*/
+.poetry h1 {
+    font-size: 75px;
+}
+
+.poetry nav a {
+    font-size: 20px;
+}
+
+/* Amia page */
+.Amia {
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+}
+
+/* ===== Optional content box (for readability on images) ===== */
+
+.content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+}
